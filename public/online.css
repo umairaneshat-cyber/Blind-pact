@@ -1,0 +1,30 @@
+/* Additions for the online version. The base look lives in style.css (unchanged from the original game). */
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{margin:0}
+[hidden]{display:none!important}
+.roomtag{font:600 12px var(--font-mono);letter-spacing:.1em;text-transform:uppercase;border:2px solid var(--ink);padding:6px 10px}
+.roomtag b{font-size:16px;letter-spacing:.2em;margin-left:4px}
+.codebig{font:900 clamp(56px,14vw,96px)/1 var(--font-display);letter-spacing:.14em;text-transform:uppercase;margin:4px 0 10px}
+.tbl .nm{flex-wrap:wrap;gap:2px 0}
+.tbl .nm .tag{margin-left:6px}
+.chatlog{list-style:none;margin:0 0 10px;padding:0;max-height:240px;min-height:60px;overflow:auto;display:grid;gap:6px;align-content:start;font-size:14px;overflow-wrap:anywhere}
+.chatform{display:flex;gap:8px}
+.chatform .inp{flex:1}
+.chatform .btn{padding:9px 14px}
+.timer{font:600 13px var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 14px}
+.timer b{font-size:22px;color:var(--ink);margin-left:6px}
+.timer b.low{color:var(--seal)}
+.toast{position:fixed;left:50%;bottom:max(16px,env(safe-area-inset-bottom));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:10px 16px;z-index:30;max-width:90vw;font-weight:600}
+.err{color:var(--seal);font-weight:600;margin-top:10px}
+.or{display:flex;align-items:center;gap:12px;margin:18px 0 6px;color:var(--muted);font:600 12px var(--font-mono);letter-spacing:.1em;text-transform:uppercase}
+.or::before,.or::after{content:"";flex:1;height:1px;background:var(--line)}
+.row2{display:flex;gap:10px}
+.row2 .inp{flex:1}
+.codein{font:700 18px var(--font-mono);letter-spacing:.3em;text-transform:uppercase;text-align:center;max-width:150px}
+.sealedbox{display:grid;gap:12px;margin-bottom:18px}
+.srow.lobby{grid-template-columns:auto minmax(0,1fr) auto}
+.srow .btn{padding:8px 12px;font-size:13px}
+.botadd{display:flex;gap:10px;margin-top:12px;flex-wrap:wrap}
+.botadd select{flex:1;min-width:140px}
+.pick-odds{font:500 12px var(--font-mono);color:var(--muted)}
+.center{display:grid;place-items:center;padding-block:12vh;text-align:center;gap:12px}

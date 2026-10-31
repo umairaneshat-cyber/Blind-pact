@@ -1,0 +1,9 @@
+# One-click deploy on Render (https://render.com): New > Blueprint > pick your GitHub repo.
+services:
+  - type: web
+    name: blind-pact
+    runtime: node
+    plan: free
+    buildCommand: echo "no build step"
+    startCommand: npm start
+    healthCheckPath: /healthz
